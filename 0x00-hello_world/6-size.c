@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main- print the string function sizeof()
+ * main- print the string function sizeof
  *
  * Description: this program checks the size of 
  * Return: 0
- */
+*/
 
 int main(void)
 {
