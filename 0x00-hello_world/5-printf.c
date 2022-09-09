@@ -1,16 +1,11 @@
 #include <stdio.h>
-
 /**
+ * main- print the string in the printf function
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     *
- *
- *      */
+ * Description: using the main function
+ * this program print "with proper grammar, but the outcome is a piece of art"
+ * Return: 0
+ */
 
 int main(void)
 
