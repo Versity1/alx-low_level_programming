@@ -2,13 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-/**  
- *main- void
- *if number is greater than zero print n is postive
- *else is is less than zero print number is negative
- *else n is zero
- *return zero
- */
+/**
+ *main - main block
+ *Description: Get a random number and print the number
+ *and if it is positive, negative, or zero
+ *Return: 0
+*/
 
 int main(void)
   
@@ -23,5 +22,6 @@ int main(void)
     printf("%d is negative\n", n);
   else
     printf("%d is zero\n", n);
+
   return (0);
 }
