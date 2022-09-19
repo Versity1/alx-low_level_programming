@@ -1,26 +1,27 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
-*more_numbers - prints numbers to 14
-*
-*Return: returns nothing
-*/
-
-void more_numbers(void)
+ * rev_string - this function return the legth of a string
+ *
+ * @s: value
+ *
+ */
+void rev_string(char *s)
 {
-	int n1, n2;
+	char charAc;
+	int i = 0;
+	int j = 0;
 
-	for (n1 = 0; n1 < 10; n1++)
+	while (s[i] != '\0')
 	{
-		for (n2 = 0; n2 <= 14; n2++)
-		{
-			if (n2 > 9)
-			{
-				putchar((n2 / 10) + '0');
-			}
-			putchar((n2 % 10) + '0');
-		}
-		putchar(10);
+		i++;
+	}
+	i--;
+	while (j <= i)
+	{
+		charAc = s[j];
+		s[j] = s[i];
+		s[i] = charAc;
+		i--;
+		j++;
 	}
 }
