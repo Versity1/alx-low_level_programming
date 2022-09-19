@@ -1,33 +1,36 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
-*print_diagonal - prints a diagonal
-*@n: parameter
-*Return: returns nothing
-*/
-
-void print_diagonal(int n)
+ * puts_half - this function return the legth of a string
+ *
+ * @str: value
+ *
+ */
+void puts_half(char *str)
 {
-	int len, space;
+	int arrayLength = 0;
+	int i = 0;
+	int half = 0;
 
-	if (n > 0)
+	while (str[i] != '\0')
 	{
-		for (len = 0; len < n; len++)
-		{
-			for (space = 0; space < len; space++)
-			{
-				putchar(' ');
-			}
-
-			putchar('\\');
-
-			if (len == (n - 1))
-			{
-				continue;
-			}
-			putchar('\n');
-		}
+		i++;
 	}
-	putchar('\n');
+	arrayLength = i + 1;
+	if (arrayLength % 2 == 0)
+	{
+		half = arrayLength / 2;
+	}
+	else
+	{
+		half = (arrayLength - 1) / 2;
+	}
+	while (half <= arrayLength)
+	{
+		if (str[half] != '\0')
+		{
+			_putchar(str[half]);
+		}
+		half++;
+	}
+	_putchar('\n');
 }
